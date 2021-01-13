@@ -1,0 +1,306 @@
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.wrapper{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #2f1e8b;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+/*White theme*/
+.wrapper.white{
+    background: #2668bf;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.content__wrapper.white{
+    background: white;
+    color: black;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.link.white{
+    color: black;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.theme.white{
+    background: url("../img/lun.ico") no-repeat;
+    background-size: contain;
+}
+
+/*White theme*/
+
+.preview{
+    width: 100%;
+    height: 700px;
+    background: url("../img/preview.png") center / cover fixed;
+}
+
+.obo{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(109, 27, 231, 0.34);
+}
+
+.obo p{
+    /*width: 150px;*/
+    line-height: 100px;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 320px;
+
+    animation-name: welcome;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+}
+
+
+@keyframes welcome {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.content{
+    margin: 20px 1.5% 0 1.5%;
+}
+
+.content__wrapper{
+    width: 100%;
+    background: rgb(45, 43, 43);
+    color: white;
+    padding: 1px 20px 20px 20px;
+    border-radius: 15px 15px 0 0;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 4px 6px 10px 5px rgba(12, 107, 182, 0.75);
+    font-size: 24px;
+    line-height: 35px;
+}
+
+#menu p{
+    width: 100%;
+    box-shadow: 4px 6px 15px 2px rgba(8, 76, 227, 0.75);
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+    margin-bottom: 10px;
+}
+
+.theme{
+    height: 100px;
+    background: url("../img/soln.ico") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    margin: 50px;
+}
+
+.link{
+    color: white;
+    margin: 10px 0 10px 0;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    border: 2px solid black;
+
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+
+#menu a:hover{
+    box-shadow: 4px 6px 15px 10px rgba(12, 107, 182, 0.75);
+    /*text-decoration: underline;*/
+}
+
+.content_video{
+    margin-top: 60px;
+    text-align: left;
+    box-shadow: 4px 6px 10px 5px rgba(12, 107, 182, 0.75);
+}
+
+.content_video p{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0 20px 10px;
+}
+
+.content__preview{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.content__preview .img{
+    width: 450px;
+    height: 230px;
+    margin: 0 10px 0 10px;
+    /*background: url("../img/episod_1.png") center / cover;*/
+}
+
+.content__preview .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.content__preview .text{
+    padding: 20px;
+    width: 70%;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.yohoho-iframe{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#up{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: url("../img/c3pio.ico") center / cover;
+    position: fixed;
+    cursor: pointer;
+    top: 90%;
+    left: 95%;
+}
+
+.footer{
+    width: 100%;
+    text-align: left;
+    background: black;
+    padding: 20px;
+}
+
+.footer p a{
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 767px){
+    .preview{
+        background-position: center;
+    }
+    .obo p{
+        font-size: 80px;
+    }
+    .content{
+        margin: 0;
+    }
+    .content_video{
+        box-shadow: 2px 0 5px 3px #0977c7;
+        margin-top: 40px;
+    }
+    .content__wrapper{
+        border-radius: 0;
+        padding: 0;
+    }
+    .theme{
+        height: 50px;
+        margin: 25px;
+    }
+    #menu{
+        line-height: 20px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    #menu p{
+        padding: 10px;
+    }
+    #menu a:hover{
+        color: white;
+    }
+    .link{
+        padding: 7px;
+    }
+    .content__preview{
+        flex-wrap: wrap;
+    }
+    .content__preview .img{
+        height: 200px;
+    }
+    .content__preview .text{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .yohoho-iframe{
+        height: 400px;
+    }
+    #up{
+        width: 40px;
+        height: 40px;
+        left: 83%;
+        top: 92%;
+    }
+    .footer{
+        margin-top: 30px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
